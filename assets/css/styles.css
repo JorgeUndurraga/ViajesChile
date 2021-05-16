@@ -1,0 +1,26 @@
+body {
+    width: 100vw;
+    font-family: 'Nunito';
+    weight: 400 !important;
+    font-size: 20px;
+    background-color: black;
+}
+
+
+nav{
+    /* background-color: rgb(35, 33, 177); */
+    margin:0;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    position: fixed;
+}
+
+.icono{
+    background-color: yellow;
+    align-content: center;
+}
+.row{
+    color: white;
+}
+
+
