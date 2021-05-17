@@ -17,8 +17,7 @@
 </head>
 <body>
     <!-- /////////////////////////////NAVEGADOR////////////////////////////////////// -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <!-- agregué style="backg....3e8c;" para asignar el color> -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">
             <img src="assets/img/viajes.svg" width="50" height=auto alt="logo suricata" loading="lazy">
             Viajes Chile
@@ -34,26 +33,26 @@
                 <!-- agregué "ml-auto" para cambiar el alineamiento del bloque de texto del menú-->
     
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#Inicio">Inicio <span class="sr-only">(current)</span></a>
                 </li>
     
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Quienes somos</a>
+                    <a class="nav-link" href="#QuienesSomos">Quienes somos</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Destacados</a>
+                    <a class="nav-link" href="#Destacados">Destacados</a>
                 </li>
     
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contactos</a>
+                    <a class="nav-link" href="#Contactos">Contactos</a>
                 </li>
     
             </ul>
         </div>
     </nav>
 <!-- carrusel -->
-<section class="container-carrusel" >
+<section class="container-carrusel" id="Inicio">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <!-- <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -81,21 +80,19 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-
 </section>
 
 
 
 <!-- quienes somos-->
-<section class="container">
-
+<section class="container d-none d-lg-block" id="QuienesSomos">
     <h3 class="text-white">
         Quienes somos
     </h3>
-    </hr>
+    <hr>
     <div class="row">
         <div class="col-md-4">
-            <div class="icono">
+            <div class="icono py-1">
                 <i class="fas fa-plane fa-2x"></i>
             </div>
             <p>
@@ -110,13 +107,13 @@
                 porro unde suscipit. Architecto nostrum deleniti incidunt aperiam fugit voluptas unde dolores nemo,
                 dicta enim? Aut, blanditiis!
             </p>
-            <div class="icono">
+            <div class="icono py-1">
                 <i class="fas fa-mountain fa-2x"></i>
             </div>
         </div>
 
         <div class="col-md-4">
-            <div class="icono">
+            <div class="icono py-1">
                 <i class="fas fa-map-marked-alt fa-2x"></i>
             </div>
             <p>
@@ -126,36 +123,93 @@
             </p>
         </div>
     </div>
-
-
-
-
 </section>
 
-
 <!-- destacado -->
-<section class="container">
-
-
+<section class="container" id="Destacados">
+    <h3 class="text-white">
+        Destacados
+    </h3>
+    <hr>
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="assets/img/card1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">
+                        Some quick example text to build on the card title
+                        and make up the bulk of the card's content.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="assets/img/card2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">
+                        Some quick example text to build on the card title
+                        and make up the bulk of the card's content.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="assets/img/card3.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">
+                        Some quick example text to build on the card title
+                        and make up the bulk of the card's content.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="assets/img/card4.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">
+                        Some quick example text to build on the card title
+                        and make up the bulk of the card's content.
+                    </p>
+                </div>
+            </div>
+        </div>
 </section>
 
 
 
 <!-- contactos -->
-<section class="container">
-
-
+<section class="container" id="Contactos">
+    <h3 class="text-white">
+        Contacto
+    </h3>
+    <hr>
+    <div class="typeform-widget" data-url="https://form.typeform.com/to/bv0sGA5O?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 </section>
 
 
-
 <!-- footer -->
-<footer>
-
-
+<footer class="mt-4">
+    <section class="row container m-auto p-0">
+        <div class="col-12 col-sm-6 d-flex p-0" style="display: flex; align-items: center;">
+            <h3 class="text-white mr-auto my-auto">
+                Viajes Chile
+            </h3>
+        </div>
+        <div class="col-12 col-sm-6 mt-sm-0 d-flex p-0" style="display: flex; align-items: center;">
+            <div class="ml-auto">
+                <a href="https://github.com" style="display: inline-block"><i  class="fab fa-github-square fa-2x m-1"></i></a>
+                <a href="https://twitter.com" style="display: inline-block"><i class="fab fa-twitter-square fa-2x m-1"></i></a>
+                <a href="https://www.linkedin.com" style="display: inline-block"><i class="fab fa-linkedin fa-2x m-1"></i></a>
+                <a href="https://www.facebook.com" style="display: inline-block"><i class="fab fa-facebook-square fa-2x m-1"></i></a>
+            </div>
+        </div>
+    </section>
 </footer>
+
+
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<script src="assets/js/scripts.js"></script>
 </body>
 </html>
