@@ -5,7 +5,7 @@ $(document).ready(function(){
             var gato=this.hash;
 
             $("html").animate({
-                scrollTop: $(gato).offset().top,
+                scrollTop: $(gato).offset().top -90,
             },
             800
             );  
