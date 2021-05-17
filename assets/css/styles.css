@@ -19,13 +19,12 @@ nav, footer{
     display: flex;
     justify-content: center;
 }
-.row{
+.row, i, .card{
     color: white;
 }
 h3{
     text-align: center;
     margin-top: 2em;
-    
 }
 
 hr{
@@ -35,9 +34,4 @@ hr{
 .card{
     background-color: rgb(3, 180, 180);
     border-color: white;
-    color: white;
-}
-
-i{
-    color: white;
 }
